@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Sustainable Agriculture Solutions">
+	<Header />
+	
+	<main>
+		<section id="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Growing Tomorrow's <span>Sustainable</span> Future Today</h1>
+					<p>Innovative agricultural solutions that respect the environment while maximizing yield and quality</p>
+					<div class="hero-buttons">
+						<a href="#services" class="btn-primary">Our Services</a>
+						<a href="#contact" class="btn-secondary">Get in Touch</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="container">
+				<h2>About <span>Us</span></h2>
+				<div class="about-content">
+					<div class="about-text">
+						<p>At FictionalCrop, we're dedicated to revolutionizing agriculture through sustainable practices and innovative technology.</p>
+						<p>Our mission is to help farmers increase their yields while maintaining environmental responsibility.</p>
+					</div>
+					<div class="about-image">
+						<img src="/assets/media/images/pexels-tomfisk-1595108.jpg" alt="Sustainable farming practices" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="container">
+				<h2>Our <span>Services</span></h2>
+				<div class="services-grid">
+					<div class="service-card">
+						<i class="fas fa-seedling"></i>
+						<h3>Crop Management</h3>
+						<p>Advanced solutions for optimal crop health and growth.</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-tractor"></i>
+						<h3>Smart Farming</h3>
+						<p>Integration of IoT and AI in farming practices.</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-cloud-sun-rain"></i>
+						<h3>Weather Monitoring</h3>
+						<p>Precise weather forecasting for better crop planning.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<h2>Contact <span>Us</span></h2>
+				<div class="contact-content">
+					<form id="contact-form">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+						<button type="submit" class="btn-primary">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</Layout>
